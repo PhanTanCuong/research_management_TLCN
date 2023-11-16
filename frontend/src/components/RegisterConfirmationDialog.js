@@ -24,16 +24,16 @@ function RegisterConfirmationDialog({
       aria-describedby="register-dialog-description"
     >
       <DialogTitle id="register-dialog-title">
-        Xác nhận đăng ký {dataLabel}
+        Verify to register {dataLabel}
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="register-dialog-description">
-          Bạn có chắc chắn muốn đăng ký {dataLabel} này không?
+          Do you want to register {dataLabel} ?
         </DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose} color="primary">
-          Hủy
+          Cancel
         </Button>
         <Button
           variant="contained"
@@ -41,7 +41,7 @@ function RegisterConfirmationDialog({
           color="primary"
           autoFocus
         >
-          Đăng ký
+          Register
         </Button>
       </DialogActions>
     </Dialog>

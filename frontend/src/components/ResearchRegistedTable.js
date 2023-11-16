@@ -58,42 +58,42 @@ function ResearchRegistedTable({
               colSpan={3}
               style={{ textAlign: "center", minWidth: 600 }}
             >
-              Hoạt động nghiên cứu KH & CN
+              Scientific research activity
             </TableCell>
             <TableCell
               colSpan={5}
               style={{ textAlign: "center", minWidth: 500 }}
             >
-              Chi tiết thông tin đăng ký
+              Detail registration information
             </TableCell>
             <TableCell style={{ minWidth: 70 }}>
-              Trạng thái phê duyệt đăng ký
+              Approval registration status
             </TableCell>
             <TableCell style={{ minWidth: 70 }}>
-              Trạng thái hoàn thành
+              Completion status
             </TableCell>
             <TableCell rowSpan={2} style={{ minWidth: 70 }}>
-              Thông tin đề tài
+              Topic information
             </TableCell>
             <TableCell rowSpan={2} style={{ minWidth: 70 }}>
-              Thông tin đăng ký
+              Registration information
             </TableCell>
             <TableCell rowSpan={2} style={{ minWidth: 70 }}>
-              Thông tin nộp đề tài
+              Submission project information
             </TableCell>
             <TableCell rowSpan={2} style={{ minWidth: 70 }}>
-              Xóa đề tài
+              Deleted project
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell style={{ minWidth: 400 }}>Hoạt động</TableCell>
-            <TableCell style={{ minWidth: 150 }}>Phân loại</TableCell>
-            <TableCell style={{ minWidth: 70 }}>Số giờ</TableCell>
-            <TableCell style={{ minWidth: 100 }}>Tên tác giả</TableCell>
-            <TableCell style={{ minWidth: 70 }}>Vị trí tác giả</TableCell>
-            <TableCell style={{ minWidth: 100 }}>Tên đề tài</TableCell>
-            <TableCell style={{ minWidth: 70 }}>Số giờ dự kiến</TableCell>
-            <TableCell style={{ minWidth: 70 }}>Kinh phí dự kiến</TableCell>
+            <TableCell style={{ minWidth: 400 }}>Activity</TableCell>
+            <TableCell style={{ minWidth: 150 }}>Category</TableCell>
+            <TableCell style={{ minWidth: 70 }}>Hours</TableCell>
+            <TableCell style={{ minWidth: 100 }}>Author</TableCell>
+            <TableCell style={{ minWidth: 70 }}>Author location</TableCell>
+            <TableCell style={{ minWidth: 100 }}>Name of project</TableCell>
+            <TableCell style={{ minWidth: 70 }}>Estimated time</TableCell>
+            <TableCell style={{ minWidth: 70 }}>Estimated price</TableCell>
           </TableRow>
         </TableHead>
 

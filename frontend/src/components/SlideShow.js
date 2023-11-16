@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import dntuIrastImage from "../assets/img/dntu-irast.jpg";
-import dntu2Image from "../assets/img/dntu-2.jpg";
-import dntu3Image from "../assets/img/dntu-3.jpg";
+import dntuIrastImage from "../assets/img/ute-01.png";
+import dntu2Image from "../assets/img/ute-02.png";
+import dntu3Image from "../assets/img/ute-03.png";
 import "../assets/css/Slider.css";
 
 const SlideShow = () => {

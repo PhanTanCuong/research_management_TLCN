@@ -14,16 +14,14 @@ function TableHeader() {
   return (
     <TableHead>
       <TableRow>
-        <TableCell style={{ minWidth: 20 }}>STT</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Tên hoạt động</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Năm học</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Cấp đề tài</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Đơn vị chủ trì</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Loại hình nghiên cứu</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Phân loại</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Tổng số giờ</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Đơn vị tính</TableCell>
-        <TableCell style={{ minWidth: 50 }}>Chọn</TableCell>
+        <TableCell style={{ minWidth: 20 }}>No</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Activity Name</TableCell>
+        <TableCell style={{ minWidth: 50 }}>School year</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Project level</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Lead unit</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Research type</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Category</TableCell>
+        <TableCell style={{ minWidth: 50 }}>Total hours</TableCell>
       </TableRow>
     </TableHead>
   );

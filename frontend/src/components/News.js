@@ -35,46 +35,27 @@ function News() {
     {
       date: "2023-10-16",
       title:
-        "Thông báo phân loại các hoạt động thành Giá trị HD ≤ 1 tỷ đồng, 1 tỷ đồng < Giá trị HĐ ≤ 2 tỷ đồng, 2 tỷ đồng < Giá trị HĐ",
-      description: "Các nhân viên theo dõi thông báo và đăng ký.",
+        "Thông báo v/v Tham dự lễ tốt nghiệp dành cho Nghiên cứu sinh, Học viên cao học tốt nghiệp tháng 8-9 và sinh viên hệ chính quy tốt nghiệp đợt tháng 7-9/2023",
+      description: "Sinh viên xem thông báo v/v đăng ký dự lễ tốt nghiệp dành cho Nghiên cứu sinh, Học viên cao học tháng 8,10/2023 và Sinh viên hệ chính quy tốt nghiệp đợt tháng 07,09/2023.",
       link: "#",
     },
     {
       date: "2023-09-25",
       title:
-        "(GẤP) Thông báo thay đổi cách thức tham gia NCKH tại Trường Đại học Công Nghệ Đồng Nai",
-      description: "",
+        "Thông báo v/v đăng ký thi kiểm tra trình độ tiếng Anh đầu ra đợt tháng 11/2023",
+      description: "Sinh viên xem thông báo chi tiết vui lòng click xem ",
       link: "#",
     },
     {
       date: "2023-09-22",
-      title: "Tổ chức “Cuộc thi sáng tạo trong NCKH tại DNTU",
+      title: "Thông báo hủy lớp Kỹ năng Giao tiếp Tiếng Anh 1",
       description: "",
       link: "#",
     },
     {
       date: "2023-09-20",
-      title: "Cơ cấu giải thưởng NCKH năm học 2023 -2024",
-      description: "",
-      link: "#",
-    },
-    {
-      date: "2023-09-02",
-      title: "(GẤP) Thông báo làm mới chương trình NCKH tại DNTU",
-      description: "",
-      link: "#",
-    },
-    {
-      date: "2023-08-10",
-      title: "Quy định hình thức hướng dẫn cho sinh viên",
-      description: "",
-      link: "#",
-    },
-    {
-      date: "2023-08-01",
-      title:
-        "(GẤP) Thông báo thay đổi cách thức tham gia NCKH tại Trường Đại học Công Nghệ Đồng Nai",
-      description: "",
+      title: "Thông báo V/v Đăng ký cấp chứng chỉ Giáo dục Quốc phòng - An ninh",
+      description: "Thông báo V/v Đăng ký cấp chứng chỉ Giáo dục Quốc phòng - An ninh",
       link: "#",
     },
   ];
@@ -94,8 +75,6 @@ function News() {
         aria-label="action tabs example"
       >
         <Tab label="Thông Báo Chung" />
-        <Tab label="Bài Báo NCKH Đã Phát Hành" />
-        <Tab label="Giải Thưởng NCKH" />
       </Tabs>
       <div className="notification-container">
         {notifications?.slice(0, 10).map((notification, index) => (
@@ -142,7 +121,7 @@ function News() {
                     href={notification.link}
                     style={{ color: "red", textDecoration: "none" }}
                   >
-                    Xem chi tiết
+                    Click here
                   </a>
                 </Grid>
               </Grid>
@@ -151,120 +130,7 @@ function News() {
             {index !== notifications.length - 1}
           </div>
         ))}
-        {articles?.slice(0, 10).map((article, index) => (
-          <div key={index}>
-            <TabPanel value={value} index={1}>
-              <Grid container spacing={2}>
-                <Grid item xs={2}>
-                  <div className="notification-date">
-                    <p
-                      style={{
-                        border: "1px solid blue",
-                        fontSize: "20px",
-                        textAlign: "center",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <span className="caltop" style={{ color: "red" }}>
-                        {article.published_date.split("-")[2]}
-                      </span>
-                      <Divider
-                        style={{ margin: "5px 0", backgroundColor: "blue" }}
-                      />
-                      <span className="calbot">{`${
-                        article.published_date.split("-")[1]
-                      }/${article.published_date.split("-")[0]}`}</span>
-                    </p>
-                  </div>
-                </Grid>
-                <Grid item xs={10}>
-                  <div className="notification-header">
-                    <h3 style={{ color: "#3f51b5", marginBottom: "5px" }}>
-                      {article.title}
-                    </h3>
-                  </div>
-                  <p
-                    className="notification-description"
-                    style={{ marginBottom: "5px" }}
-                  >
-                    {article.description}
-                  </p>
-                  <a
-                    className="notification-link"
-                    href={article.url}
-                    style={{ color: "red", textDecoration: "none" }}
-                  >
-                    Xem chi tiết
-                  </a>
-                </Grid>
-              </Grid>
-            </TabPanel>
-            {index !== articles.length - 1 && (
-              <Divider style={{ margin: "5px 0" }} />
-            )}
-          </div>
-        ))}
-        {awards?.slice(0, 10).map((award, index) => (
-          <div key={index}>
-            <TabPanel value={value} index={2}>
-              <Grid container spacing={2}>
-                <Grid item xs={2}>
-                  <div className="notification-date">
-                    <p
-                      style={{
-                        border: "1px solid blue",
-                        fontSize: "20px",
-                        textAlign: "center",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <span className="caltop" style={{ color: "red" }}>
-                        {award.award_received_date.split("-")[2]}
-                      </span>
-                      <Divider
-                        style={{ margin: "5px 0", backgroundColor: "blue" }}
-                      />
-                      <span className="calbot">{`${
-                        award.award_received_date.split("-")[1]
-                      }/${award.award_received_date.split("-")[0]}`}</span>
-                    </p>
-                  </div>
-                </Grid>
-                <Grid item xs={10}>
-                  <div className="notification-header">
-                    <h3 style={{ color: "#3f51b5", marginBottom: "5px" }}>
-                      {award.title}
-                    </h3>
-                  </div>
-                  <p
-                    className="notification-description"
-                    style={{ marginBottom: "5px" }}
-                  >
-                    {award.description}
-                  </p>
-                  <p
-                    className="notification-authors"
-                    style={{ marginBottom: "5px" }}
-                  >
-                    {award.authors}
-                  </p>
-                  <a
-                    className="notification-link"
-                    href={award.url}
-                    style={{ color: "red", textDecoration: "none" }}
-                  >
-                    Xem chi tiết
-                  </a>
-                </Grid>
-              </Grid>
-            </TabPanel>
-            {index !== awards.length - 1 && (
-              <Divider style={{ margin: "5px 0" }} />
-            )}
-          </div>
-        ))}
+        
         <div style={{ textAlign: "right" }}>
           <a
             href="/link-to-more"
@@ -275,7 +141,7 @@ function News() {
               textDecoration: "none",
             }}
           >
-            Xem thêm
+            See more
           </a>
         </div>
       </div>

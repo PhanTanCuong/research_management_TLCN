@@ -78,7 +78,7 @@ const Account = () => {
               onClick={handleAccountMenuClose}
               sx={{ minWidth: "200px" }}
             >
-              Thông tin cá nhân
+              personal information
             </MenuItem>
 
             <MenuItem
@@ -87,7 +87,7 @@ const Account = () => {
               onClick={handleAccountMenuClose}
               sx={{ minWidth: "200px" }}
             >
-              Lý lịch khoa học
+              Scientific information
             </MenuItem>
 
             <MenuItem
@@ -96,7 +96,7 @@ const Account = () => {
               onClick={handleAccountMenuClose}
               sx={{ minWidth: "200px" }}
             >
-              Hoạt động khoa học
+              Scientific activitiy
             </MenuItem>
 
             <MenuItem
@@ -105,13 +105,13 @@ const Account = () => {
               onClick={handleAccountMenuClose}
               sx={{ minWidth: "200px" }}
             >
-              Đổi mật khẩu
+              Change password
             </MenuItem>
 
             <Divider />
 
             <MenuItem component={Link} onClick={handleLogout}>
-              Đăng xuất
+              Logout
             </MenuItem>
           </Menu>
         </div>
@@ -124,7 +124,7 @@ const Account = () => {
           sx={{ width: "23vh" }}
         >
           <AccountCircle className="account-icon" />
-          Đăng nhập
+          Login
         </Button>
       )}
     </div>

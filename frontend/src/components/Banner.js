@@ -60,7 +60,7 @@ const Banner = () => {
                   lineHeight: "24px",
                 }}
               >
-                Trường Đại học Công nghệ Đồng Nai
+                University of Technologu and Education Ho Chi Minh city
               </Typography>
               <Typography
                 variant="subtitle2"
@@ -70,7 +70,7 @@ const Banner = () => {
                   lineHeight: "24px",
                 }}
               >
-                Khoa Công nghệ thông tin
+                Faculty For High Quality Training.
               </Typography>
             </div>
           </Grid>
@@ -87,7 +87,7 @@ const Banner = () => {
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
               }}
             >
-              Hệ thống Quản lý Nghiên cứu khoa học
+              Scientific research managment system
             </Typography>
           </Grid>
         </Grid>

@@ -24,23 +24,23 @@ function DeleteConfirmationDialog({
       aria-describedby="delete-dialog-description"
     >
       <DialogTitle id="delete-dialog-title">
-        Xác nhận xóa {dataLabel}
+        Verify to Delete {dataLabel}
       </DialogTitle>
       <DialogContent>
         <DialogContentText id="delete-dialog-description">
-          Bạn có chắc chắn muốn xóa {dataLabel} "{itemName}" không?
+          Do you want to Delete  {dataLabel} "{itemName}"  ?
         </DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose} color="primary">
-          Hủy
+          Cancel
         </Button>
         <Button
           onClick={() => onDelete(itemToDelete?.id)}
           color="error"
           autoFocus
         >
-          Xóa
+          Delete
         </Button>
       </DialogActions>
     </Dialog>
